@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -57,23 +58,24 @@ export default function App() {
   // Define photo mapping for each scene (1-10)
   // To add a photo for a scene, put the image file in the public/ folder (e.g., public/scene2.jpg)
   // and update the filename here. If null, no photo is shown.
+  const base = import.meta.env.BASE_URL;
   const scenePhotos: Record<number, string | null> = {
     1: null,
-    2: 'scene2.jpg',
-    3: 'scene3.jpg',
+    2: `${base}scene2.jpg`,
+    3: `${base}scene3.jpg`,
     4: null,
-    5: 'scene5.jpg',
+    5: `${base}scene5.jpg`,
     6: null,
-    7: 'scene7.jpg',
-    8: 'scene8.jpg',
-    9: 'scene9.jpg',
-    10: 'scene10.jpg',
+    7: `${base}scene7.jpg`,
+    8: `${base}scene8.jpg`,
+    9: `${base}scene9.jpg`,
+    10: `${base}scene10.jpg`,
   };
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center overflow-hidden selection:bg-gold/20 relative">
-      <audio ref={audioRef} src="background-music.webm" />
-      <audio ref={voiceoverRef} src="voiceover.mp3" />
+      <audio ref={audioRef} src={`${base}background-music.webm`} />
+      <audio ref={voiceoverRef} src={`${base}voiceover.mp3`} />
 
       {/* Background Images with Ken Burns & Filters (Brightness +15%, Sepia for warmth) */}
       <AnimatePresence mode="popLayout">
