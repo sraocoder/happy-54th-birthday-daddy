@@ -301,7 +301,7 @@ export default function App() {
             animate={{ opacity: 1, transition: { duration: 4, ease: "easeIn" } }}
             className="absolute inset-0 flex flex-col items-center justify-center z-10"
           >
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-background/40 pointer-events-none z-0 backdrop-blur-sm"></div>
+
 
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-gold tracking-wide mb-12 gold-glow z-10 drop-shadow-2xl">
               Happy 54th Birthday, Daddy.
