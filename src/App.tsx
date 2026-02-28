@@ -59,21 +59,21 @@ export default function App() {
   // and update the filename here. If null, no photo is shown.
   const scenePhotos: Record<number, string | null> = {
     1: null,
-    2: '/scene2.jpg',
-    3: '/scene3.jpg',
+    2: 'scene2.jpg',
+    3: 'scene3.jpg',
     4: null,
-    5: '/scene5.jpg',
+    5: 'scene5.jpg',
     6: null,
-    7: '/scene7.jpg',
-    8: '/scene8.jpg',
-    9: '/scene9.jpg',
-    10: '/scene10.jpg',
+    7: 'scene7.jpg',
+    8: 'scene8.jpg',
+    9: 'scene9.jpg',
+    10: 'scene10.jpg',
   };
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center overflow-hidden selection:bg-gold/20 relative">
-      <audio ref={audioRef} src="/background-music.webm" />
-      <audio ref={voiceoverRef} src="/voiceover.mp3" />
+      <audio ref={audioRef} src="background-music.webm" />
+      <audio ref={voiceoverRef} src="voiceover.mp3" />
 
       {/* Background Images with Ken Burns & Filters (Brightness +15%, Sepia for warmth) */}
       <AnimatePresence mode="popLayout">
