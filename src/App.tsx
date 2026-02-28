@@ -82,15 +82,15 @@ export default function App() {
             key={`bg-${scene}`}
             src={scenePhotos[scene]!}
             initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 0.60, scale: 1.15, transition: { duration: 15, ease: "linear" } }}
+            animate={{ opacity: 0.85, scale: 1.15, transition: { duration: 15, ease: "linear" } }}
             exit={{ opacity: 0, transition: { duration: 2 } }}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0 mix-blend-luminosity brightness-125 sepia-[.15]"
+            className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0 mix-blend-luminosity brightness-150 sepia-[.15]"
           />
         )}
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-background/40 z-0 pointer-events-none transition-all duration-1000"></div>
+      <div className="absolute inset-0 bg-background/20 z-0 pointer-events-none transition-all duration-1000"></div>
 
       {/* Abstract Texture Overlay */}
       <div className="absolute inset-0 subtle-texture opacity-30 pointer-events-none transition-opacity duration-[3000ms] z-0"></div>
