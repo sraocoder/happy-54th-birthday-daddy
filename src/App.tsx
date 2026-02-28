@@ -87,7 +87,7 @@ export default function App() {
             animate={{ opacity: 0.85, scale: 1.15, transition: { duration: 15, ease: "linear" } }}
             exit={{ opacity: 0, transition: { duration: 2 } }}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0 mix-blend-luminosity brightness-150 sepia-[.15]"
+            className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0 brightness-110 sepia-[.10]"
           />
         )}
       </AnimatePresence>
